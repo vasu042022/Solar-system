@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(image/galaxy.mp4) top center no-repeat;
+    background-size: cover;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    /* align-items: center; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    height: 200px;
+    font-size: 60px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.parent {
+    width: 2400px;
+    height: 2400px;
+    position: relative;
+    border: 1px red solid;
+    margin: 200px auto;
+}
+
+.orbit1 {
+    width: 2100px;
+    height: 2100px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 150px 150px;
+    /* border: 2px gray solid; */
+    animation: rotate 20s infinite linear;
+}
+
+.orbit2 {
+    width: 1800px;
+    border-radius: 50%;
+    height: 1800px;
+    position: absolute;
+    margin: 300px 300px;
+    /* border: 2px gray solid; */
+    animation: rotate 25s infinite linear;
+}
+.orbit3 {
+    width: 1500px;
+    border-radius: 50%;
+    height: 1500px;
+    position: absolute;
+    margin: 450px 450px;
+    /* border: 2px gray solid; */
+    animation: rotate 19s infinite linear;
+}
+.orbit4 {
+    width: 1200px;
+    border-radius: 50%;
+    height: 1200px;
+    position: absolute;
+    margin: 600px 600px;
+    /* border: 2px gray solid; */
+    animation: rotate 14s infinite linear;
+}
+.orbit5 {
+    width: 900px;
+    border-radius: 50%;
+    height: 900px;
+    position: absolute;
+    margin: 750px 750px;
+    /* border: 2px gray solid; */
+    animation: rotate 20s infinite linear;
+}
+.orbit6 {
+    width: 600px;
+    border-radius: 50%;
+    height: 600px;
+    position: absolute;
+    margin: 900px 900px;
+    /* border: 1px white solid; */
+    animation: rotate 18s infinite linear;
+}
+img{
+    z-index: 1;
+}
+.orbit7 {
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    background-size: cover;
+    position: absolute;
+    margin: 1050px 1050px;
+    box-shadow: 0 0 177px rgb(255 195 0);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.sun{
+    position: absolute;
+    top: -55px;
+    left: -50px;
+}
+.planet1{
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: -2%;
+}
+.planet2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+.planet3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    transition: 10s;
+    border: 1px red solid;
+    animation: earth 10s infinite linear;
+}
+@keyframes earth{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.earth{
+    position: absolute;
+    top: -24px;
+    left: -17px;
+}
+.moon{
+    position: absolute;
+    top: 50px;
+    left: -100px;
+}
+.planet4{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -6%;
+    left: 50%;
+}
+.planet5{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 72%;
+}
+.planet6{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 88%;
+}
